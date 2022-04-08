@@ -1,6 +1,6 @@
-import { ButtonGroup, Container, IconButton, Stack, Text } from '@chakra-ui/react'
+import { ButtonGroup, Container, IconButton, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { Logo } from './Logo'
 
 export const Footer = () => (
@@ -32,12 +32,12 @@ export const Footer = () => (
             as="a"
             href="#"
             aria-label="Twitter"
-            icon={<FaTwitter fontSize="1.25rem" />}
+            icon={<FaEnvelope fontSize="1.25rem" />}
           />
         </ButtonGroup>
       </Stack>
-      <Text fontSize="sm" color="subtle">
-        &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights reserved.
+      <Text fontSize="sm" color={mode("gray.900", "gray.400")}>
+        &copy; {new Date().getFullYear()} Matthew Ng. ABN: 994 810 476 63
       </Text>
     </Stack>
   </Container>

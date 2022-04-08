@@ -13,14 +13,11 @@ import * as React from 'react'
 import { FiMenu, FiMoon, FiSun } from 'react-icons/fi'
 import { Logo } from './Logo'
 
-
-
 function ToggleTheme() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <header>
       <IconButton 
-        colorScheme={colorMode === 'light' ? 'gray' : 'orange'}
         fontSize='24px'
         aria-label='toggle color mode'
         icon={colorMode === 'light' ? <FiMoon /> : <FiSun />}
@@ -38,10 +35,6 @@ export const Navbar = () => {
   return (
     <Box
       as="section"
-      pb={{
-        base: '12',
-        md: '24',
-      }}
     >
       <Box
         as="nav"
@@ -57,23 +50,26 @@ export const Navbar = () => {
             {isDesktop ? (
               <HStack spacing="10">
                 <ButtonGroup variant="link" spacing="8">
-                  {['About', 'Services', 'Testimonials'].map((item) => (
-                    <Button key={item}>{item}</Button>
+                  {['About', 'Services', 'Reviews', 'Pricing'].map((item) => (
+                    <Button variant="ghost" key={item}>{item}</Button>
                   ))}
                 </ButtonGroup>
                 <Box>
-                  <Button variant="primary" py="10" px="6" my="-5" borderRadius="0">
+                  <Button variant="ghost" px="6" borderRadius="5">
                     Contact
-                  </Button>
+                  </Button>                  
                 </Box>
                 <ToggleTheme />
               </HStack>
             ) : (
-              <IconButton
-                variant="ghost"
-                icon={<FiMenu fontSize="1.25rem" />}
-                aria-label="Open Menu"
-              />
+              <HStack spacing="10">
+                <IconButton
+                  variant="ghost"
+                  icon={<FiMenu fontSize="1.25rem" />}
+                  aria-label="Open Menu"
+                />
+                <ToggleTheme />
+              </HStack>
             )}
           </HStack>
         </Container>

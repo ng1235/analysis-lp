@@ -1,0 +1,1 @@
+export const priceBodyText = "Specific to your desired project scope & timeline - contact to discuss"
