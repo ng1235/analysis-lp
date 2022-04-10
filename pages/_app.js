@@ -1,12 +1,22 @@
 import '../styles/globals.css'
-import { ChakraProvider } from '@chakra-ui/react'
-// import theme from '@chakra-ui/pro-theme';
-import '@fontsource/inter';
-import customTheme from './theme'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import theme from '@chakra-ui/pro-theme';
+import '@fontsource/inter/variable.css'
+
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+}
 
 function MyApp({ Component, pageProps }) {
+  const myTheme = extendTheme({
+    colors: {},
+  },
+  theme,
+  config,
+  )
   return (
-    <ChakraProvider theme={customTheme}>
+    <ChakraProvider theme={myTheme}>
       <Component {...pageProps} />
     </ChakraProvider>
   )

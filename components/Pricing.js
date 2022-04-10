@@ -2,7 +2,7 @@ import { Box, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 import { SectionHeader } from './SectionHeader'
 import { SectionText } from './SectionText'
-import { priceBodyText } from './pricing-data'
+import { priceBodyText } from './text-data/pricing-data'
 
 export const Pricing = () => {
   return (

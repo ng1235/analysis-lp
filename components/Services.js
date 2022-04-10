@@ -11,7 +11,7 @@ import {
   useColorModeValue as mode
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { services } from './services-data'
+import { services } from './text-data/services-data'
 import { SectionHeader } from './SectionHeader'
 
 export const Services = () => {

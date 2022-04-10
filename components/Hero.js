@@ -8,6 +8,7 @@ import {
   useColorModeValue as mode,
 } from '@chakra-ui/react'
 import * as React from 'react'
+import { FiMail } from 'react-icons/fi'
 
 export function Hero() {
   return (
@@ -39,23 +40,27 @@ export function Hero() {
             }}
           >
             <Heading as="h1" size="3xl" mt="8" fontWeight="bold" textAlign='center'>
-              On-demand, industry standard economic modelling.
+              On-demand, industry standard project economic analysis.
             </Heading>
             <Text color={mode('gray.600', 'gray.400')} mt="5" fontSize="2xl" textAlign='center'>
               NextGen delivers professional, timely & robust project economics to support early opportunity decision making.
             </Text>
-            <Button
-              mt="12"
-              minW="10rem"
-              colorScheme="blue"
-              size="lg"
-              height="14"
-              px="8"
-              fontSize="md"
-              ml="35%"
-            >
-              Get in touch
-            </Button>
+            <a href="mailto: matthewtng.2@gmail.com" target="_blank">
+              <Button
+                mt="12"
+                minW="10rem"
+                colorScheme="blue"
+                size="lg"
+                height="14"
+                px="8"
+                fontSize="md"
+                ml="35%"
+                leftIcon={<FiMail size='20' />}
+              >
+                Get in touch
+              </Button>
+            </a>
+
           </Box>
           {/* <Img
             pos="relative"

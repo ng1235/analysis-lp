@@ -8,19 +8,21 @@ import {
   IconButton,
   useBreakpointValue,
   useColorMode,
+  useColorModeValue as mode
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { FiMenu, FiMoon, FiSun } from 'react-icons/fi'
+import { FiMenu, FiMoon, FiSun, FiMail } from 'react-icons/fi'
 import { Logo } from './Logo'
+import Link from 'next/link'
 
 function ToggleTheme() {
-  const { colorMode, toggleColorMode } = useColorMode()
+  const { toggleColorMode } = useColorMode()
   return (
     <header>
       <IconButton 
         fontSize='24px'
         aria-label='toggle color mode'
-        icon={colorMode === 'light' ? <FiMoon /> : <FiSun />}
+        icon={mode(<FiMoon />, <FiSun />)}
         onClick={toggleColorMode}
       />
     </header>
@@ -51,13 +53,23 @@ export const Navbar = () => {
               <HStack spacing="10">
                 <ButtonGroup variant="link" spacing="8">
                   {['About', 'Services', 'Reviews', 'Pricing'].map((item) => (
-                    <Button variant="ghost" key={item}>{item}</Button>
+                    <Link 
+                      href={`/#${item.toLowerCase()}`} 
+                      scroll={false}
+                    >
+                      <Button 
+                        variant="ghost" 
+                        key={item}>{item}
+                      </Button>
+                    </Link>
                   ))}
                 </ButtonGroup>
                 <Box>
-                  <Button variant="ghost" px="6" borderRadius="5">
-                    Contact
-                  </Button>                  
+                  <a target="_blank" href="mailto:matthewtng.2@gmail.com">
+                    <Button variant="outline" px="6" borderRadius="5" leftIcon={<FiMail />}>
+                      Contact
+                    </Button>
+                  </a>
                 </Box>
                 <ToggleTheme />
               </HStack>

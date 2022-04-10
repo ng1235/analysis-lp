@@ -2,7 +2,7 @@ const paraOne = 'NGA works with ASX listed companies to provide industry-quality
 
 const paraTwo = 'NGA is based in Perth and available on an on-demand, project-specific basis.';
 
-const paraThree = "You can read more about our approach and common questions from the links below."
+const paraThree = "You can read more about available services, our approach and common questions in the links below."
 
 
 const paragraphs = [paraOne, paraTwo, paraThree];

@@ -1,7 +1,8 @@
 import { Box, Container, Button, Flex, Divider, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
-import { paragraphs } from './about-data.js'
+import { paragraphs } from './text-data/about-data'
 import { SectionHeader } from './SectionHeader'
+import Link from 'next/link'
 
 export const About = () => {
 
@@ -27,8 +28,10 @@ export const About = () => {
         <Box mt={10}>
           <Flex justifyContent='space-around'>
             <Button variant='outline'>Our Approach</Button>
-            <Button variant='outline'>Who is this service for?</Button>
-            <Button variant='outline'>FAQs</Button>
+            <Button variant='outline'>Models Are Wrong</Button>
+            <Link href='/questions'>
+              <Button variant='outline'>Questions</Button>
+            </Link>
           </Flex>
         </Box>
       </Container>

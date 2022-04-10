@@ -1,16 +1,17 @@
-import { useColorMode } from '@chakra-ui/react'
-import { Box } from '@chakra-ui/react'
+import { useColorModeValue as mode } from '@chakra-ui/react'
+import { Image } from '@chakra-ui/react'
 import * as React from 'react'
+import Link from 'next/link'
 
 export function Logo () {
-  const { colorMode } = useColorMode();
-
   return (
-    <Box 
-      color={colorMode === 'light' ? 'blue.900' : 'blue.200'}
-      fontWeight='bold'
-    >
-      NextGen
-    </Box>
+    <Link href='/'>
+      <Image 
+        htmlWidth='50px' 
+        htmlHeight='25px' 
+        src={mode("/logo-dark.svg", "./logo-light.svg")}
+        cursor='pointer' 
+      />
+    </Link>
   )
 }
