@@ -27,8 +27,9 @@ export const About = () => {
         </Box>
         <Box mt={10}>
           <Flex justifyContent='space-around'>
-            <Button variant='outline'>Our Approach</Button>
-            <Button variant='outline'>Models Are Wrong</Button>
+            <Link href="/our-approach">
+              <Button variant='outline'>Models Are Wrong</Button>
+            </Link>
             <Link href='/questions'>
               <Button variant='outline'>Questions</Button>
             </Link>

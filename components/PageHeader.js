@@ -9,7 +9,7 @@ import {
 export const PageHeader = ({ title }) => {
   return (
 
-    <Stack spacing="2" px="5" my="16">
+    <Stack spacing="2" px="5" mt="16" mb="7">
       <Text 
         fontSize="5xl" 
         fontWeight="medium"

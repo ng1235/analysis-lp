@@ -8,8 +8,8 @@ export const Footer = () => (
     as="footer"
     role="contentinfo"
     py={{
-      base: '12',
-      md: '16',
+      base: '10',
+      md: '10',
     }}
   >
     <Divider />
@@ -18,7 +18,7 @@ export const Footer = () => (
         base: '4',
         md: '5',
       }}
-      mt={8}
+      mt={6}
     >
       <Stack justify="space-between" direction="row" align="center">
         <Logo />

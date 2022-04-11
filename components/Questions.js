@@ -1,9 +1,5 @@
 import {
   Accordion,
-  AccordionItem,
-  AccordionPanel,
-  AccordionIcon,
-  AccordionButton,
   Box
 } from '@chakra-ui/react';
 import { PageHeader } from './PageHeader'

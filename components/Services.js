@@ -24,7 +24,7 @@ export const Services = () => {
           md: '24',
         }}
       >
-        <SectionHeader title="Services" />
+        <SectionHeader title="Our Service" />
         <Stack
           spacing={{
             base: '12',
