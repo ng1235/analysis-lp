@@ -52,6 +52,10 @@ export const questions = [
     answer: "Yes - there's most likely a lot that's left out of an initial analysis, because we only aim to assess and support the objectives that are relevant to you at a certain point in time. We're available on request to assess additional phases, other operating models, or if you require additional functionality in your valuation model."
   },
   {
+    title: "Can you help maintain my project model?",
+    answer: "Yes - contact for a discussion."
+  },
+  {
     title: "Can't I just hire a full-time analyst for my work?",
     answer: "Yes. However, this might not be suitable if you have projects that have bursts of work followed by periods where additional analysis is not required. Additionally, the cost of a full-time or fixed-term (e.g. six-month) contract to your business likely exceeds what we'd charge, given our project based pricing."
   },

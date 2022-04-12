@@ -9,7 +9,7 @@ export const services = [
   {
     name: 'Sensitivity Analysis',
     description:
-      "Comprehensive scenario assessment to understand key project value levers and their relative impact on project value",
+      "Comprehensive scenario assessment to understand key project value levers and their relative impact",
     icon: FiAlignCenter,
   },
   {
