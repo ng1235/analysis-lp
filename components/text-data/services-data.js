@@ -1,28 +1,26 @@
-import { BsFillMoonFill, BsStars } from 'react-icons/bs'
-import { FaAccessibleIcon, FaExpandAlt, FaPaintBrush } from 'react-icons/fa'
-import { IoRocketSharp } from 'react-icons/io5'
+import { FiBarChart, FiAlignCenter, FiSliders, FiWatch } from 'react-icons/fi'
 
 export const services = [
   {
     name: 'Life-Cycle Economics',
-    description: 'Full project economics evaluation, using industry-standard discounted cash flow valuation technique',
-    icon: BsStars,
+    description: 'Full project economics evaluation through Excel using industry-standard discounted cash flow valuation technique',
+    icon: FiBarChart,
   },
   {
     name: 'Sensitivity Analysis',
     description:
-      "Capable of delivering a comprehensive set of flex cases to understand key project value levers",
-    icon: IoRocketSharp,
+      "Comprehensive scenario assessment to understand key project value levers and their relative impact on project value",
+    icon: FiAlignCenter,
   },
   {
-    name: 'Segmented Value Chain',
-    description: 'Capable of delivering assessments of complex business models, including multiple segments of the value chain with differing rates of return',
-    icon: BsFillMoonFill,
+    name: 'Business Model Assessment',
+    description: 'Comparison of various operating models, including multiple value chain segments with differing rates of return',
+    icon: FiSliders,
   },
   {
-    name: 'On-demand',
+    name: 'On Demand',
     description:
-      "We work autonomously and independently - no fixed-term or full-time contracts required",
-    icon: FaPaintBrush,
+      "Autonomous and independent work, with no fixed term or full time contracts required",
+    icon: FiWatch,
   },
 ]

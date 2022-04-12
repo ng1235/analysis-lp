@@ -49,7 +49,9 @@ export function Hero() {
               <Button
                 mt="12"
                 minW="10rem"
-                colorScheme="blue"
+                bgColor={mode('blue.800', 'blue.200')}
+                _hover={{ bg: mode('blue.700', 'blue.300') }}
+                color={mode('white', 'gray.800')}
                 size="lg"
                 height="14"
                 px="8"

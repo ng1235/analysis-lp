@@ -58,8 +58,8 @@ export const Services = () => {
                     base: '10',
                     md: '10',
                   }}
-                  bg={mode('blue.800', 'blue.400')}
-                  color='white'
+                  bg={mode('blue.800', 'blue.200')}
+                  color={mode('white', 'gray.700')}
                   borderRadius="lg"
                 >
                   <Icon

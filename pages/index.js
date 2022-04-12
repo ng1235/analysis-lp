@@ -17,7 +17,7 @@ export default function Index() {
       <Box id="about">
         <About />
       </Box>
-      <Box id="services">
+      <Box id="service">
         <Services />
       </Box>
       <Box id="pricing">

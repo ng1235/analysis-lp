@@ -52,10 +52,9 @@ export const Navbar = () => {
             {isDesktop ? (
               <HStack spacing="10">
                 <ButtonGroup variant="link" spacing="8">
-                  {['About', 'Services', 'Reviews', 'Pricing'].map((item, idx) => (
+                  {['About', 'Service'].map((item, idx) => (
                     <Link 
                       href={`/#${item.toLowerCase()}`} 
-                      scroll={false}
                       key={idx}
                     >
                       <Button 

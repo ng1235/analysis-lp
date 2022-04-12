@@ -28,15 +28,17 @@ export const Footer = () => (
         <ButtonGroup variant="ghost">
           <IconButton
             as="a"
-            href="#"
+            href="https://www.linkedin.com/in/matthew-ng-2907ba11a/"
+            target="_blank"
             aria-label="LinkedIn"
             icon={<FaLinkedin fontSize="1.25rem" />}
           />
-          <IconButton as="a" href="#" aria-label="GitHub" icon={<FaGithub fontSize="1.25rem" />} />
+          <IconButton as="a" href="https://github.com/ng1235/" target="_blank" aria-label="GitHub" icon={<FaGithub fontSize="1.25rem" />} />
           <IconButton
             as="a"
-            href="#"
-            aria-label="Twitter"
+            href="mailto:matthewtng.2@gmail.com"
+            target="_blank"
+            aria-label="Mail"
             icon={<FaEnvelope fontSize="1.25rem" />}
           />
         </ButtonGroup>
