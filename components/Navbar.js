@@ -54,7 +54,8 @@ export const Navbar = () => {
                 <ButtonGroup variant="link" spacing="8">
                   {['About', 'Service'].map((item, idx) => (
                     <Link 
-                      href={`/#${item.toLowerCase()}`} 
+                      href={`/#${item.toLowerCase()}`}
+                      passHref
                       key={idx}
                     >
                       <Button 
@@ -66,7 +67,9 @@ export const Navbar = () => {
                   ))}
                 </ButtonGroup>
                 <Box>
-                  <a target="_blank" href="mailto:matthewtng.2@gmail.com">
+                  <a target="_blank" href="mailto:matthewtng.2@gmail.com"
+                  rel="noopener noreferrer"
+                  >
                     <Button variant="outline" px="6" borderRadius="5" leftIcon={<FiMail />}>
                       Contact
                     </Button>

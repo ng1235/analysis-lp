@@ -45,7 +45,10 @@ export function Hero() {
             <Text color={mode('gray.600', 'gray.400')} mt="5" fontSize="2xl" textAlign='center'>
               NextGen delivers professional, timely & robust project economics to support early opportunity decision making.
             </Text>
-            <a href="mailto: matthewtng.2@gmail.com" target="_blank">
+            <a 
+              href="mailto: matthewtng.2@gmail.com" target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 mt="12"
                 minW="10rem"

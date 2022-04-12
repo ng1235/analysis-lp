@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function Logo () {
   return (
-    <Link href='/'>
+    <Link href='/' passHref>
       <Image 
         htmlWidth='50px' 
         htmlHeight='25px' 

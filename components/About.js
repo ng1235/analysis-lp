@@ -27,10 +27,10 @@ export const About = () => {
         </Box>
         <Box mt={10}>
           <Flex justifyContent='space-around'>
-            <Link href="/our-approach">
+            <Link href="/our-approach" passHref>
               <Button variant='outline'>Models Are Wrong</Button>
             </Link>
-            <Link href='/questions'>
+            <Link href='/questions' passHref>
               <Button variant='outline'>Questions</Button>
             </Link>
           </Flex>

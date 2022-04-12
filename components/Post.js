@@ -23,7 +23,7 @@ export function Post ({ postContent, date} ) {
       </Stack>
       <Stack spacing="7" mt="10" p="5">
         {postContent.superscripts.map((text, idx) => (
-          <Text as="sup">
+          <Text as="sup" key={idx}>
             {idx + 1} {text}
           </Text>
         ))}
