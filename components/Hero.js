@@ -12,7 +12,7 @@ import { FiMail } from 'react-icons/fi'
 
 export function Hero() {
   return (
-    <Box as="section" bg={mode('white', 'gray.800')} pt="24" pb="12" overflow="hidden">
+    <Box as="section" bg={mode('white', 'gray.800')} pt={{base: "16", md: "24"}} pb="12" overflow="hidden">
       <Box
         maxW={{
           base: 'xl',
@@ -25,24 +25,37 @@ export function Hero() {
         }}
       >
         <Flex
-          alignItems="center"
           direction={{
             base: 'column',
             lg: 'row',
           }}
-          justify='center'
-          mb="20"
+          maxW='2xl'
+          mx='auto'
+          justifyContent='center'
+          mb="24"
         >
-          <Box
-            flex="1"
-            maxW={{
-              lg: 'xl',
-            }}
+          <Flex
+            direction='column'
+            alignItems='center'
           >
-            <Heading as="h1" size="3xl" mt="8" fontWeight="bold" textAlign='center'>
+            <Heading 
+              fontWeight="bold" 
+              as="h1" mt="8" 
+              textAlign='center'
+              size='3xl'
+            >
               On-demand, industry standard project economic analysis.
             </Heading>
-            <Text color={mode('gray.600', 'gray.400')} mt="5" fontSize="2xl" textAlign='center'>
+            <Text 
+              color={mode('gray.600', 'gray.400')}
+              mt="5" 
+              fontSize="2xl" 
+              textAlign='center' 
+              p={{
+                md: '0',
+                lg: '5'
+                }}
+              >
               NextGen delivers professional, timely & robust project economics to support early opportunity decision making.
             </Text>
             <a 
@@ -59,14 +72,14 @@ export function Hero() {
                 height="14"
                 px="8"
                 fontSize="md"
-                ml="35%"
                 leftIcon={<FiMail size='20' />}
+                textAlign='center'
               >
                 Get in touch
               </Button>
             </a>
 
-          </Box>
+          </Flex>
           {/* <Img
             pos="relative"
             marginEnd="-16rem"

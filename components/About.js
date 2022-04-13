@@ -17,23 +17,16 @@ export const About = () => {
                 mt={7} 
                 key={idx} 
                 px="5" 
-                fontSize='lg'
+                fontSize={{
+                  base: 'lg',
+                  lg: 'xl'
+                }}
                 color={mode("gray.900", 'gray.400')}
               >
                 {paragraph}
               </Text>
             )
           })}
-        </Box>
-        <Box mt={10}>
-          <Flex justifyContent='space-around'>
-            <Link href="/our-approach" passHref>
-              <Button variant='outline'>Models Are Wrong</Button>
-            </Link>
-            <Link href='/questions' passHref>
-              <Button variant='outline'>Questions</Button>
-            </Link>
-          </Flex>
         </Box>
       </Container>
     </Box>

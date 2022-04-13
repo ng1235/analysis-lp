@@ -20,8 +20,8 @@ export const Services = () => {
     <Box as="section" bg="bg-surface">
       <Container
         py={{
-          base: '16',
-          md: '24',
+          base: '12',
+          md: '18',
         }}
       >
         <SectionHeader title="Our Service" />
@@ -78,7 +78,7 @@ export const Services = () => {
                 >
                   <Text
                     fontSize={{
-                      base: 'lg',
+                      base: '2xl',
                       md: 'xl',
                     }}
                     fontWeight="medium"
@@ -86,7 +86,7 @@ export const Services = () => {
                   >
                     {service.name}
                   </Text>
-                  <Text color={mode('gray.900', 'gray.400')}>{service.description}</Text>
+                  <Text color={mode('gray.900', 'gray.400')} p={5} fontSize={{base: 'lg', md: 'xl'}}>{service.description}</Text>
                 </Stack>
               </Stack>
             ))}

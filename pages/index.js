@@ -8,6 +8,7 @@ import { Hero } from '../components/Hero'
 import { Services } from '../components/Services'
 import { About } from '../components/About'
 import { Pricing } from '../components/Pricing'
+import { Overview } from '../components/Overview'
 
 export default function Index() {
   return (
@@ -19,6 +20,9 @@ export default function Index() {
       </Box>
       <Box id="service">
         <Services />
+      </Box>
+      <Box id="approach">
+        <Overview />
       </Box>
       <Box id="pricing">
         <Pricing />

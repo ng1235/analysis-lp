@@ -11,7 +11,7 @@ export const PageHeader = ({ title }) => {
 
     <Stack spacing="2" px="5" mt="16" mb="7">
       <Text 
-        fontSize="5xl" 
+        fontSize="4xl" 
         fontWeight="medium"
         color={mode('gray.900', 'gray.400')}
         textAlign='center'
