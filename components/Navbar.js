@@ -23,11 +23,10 @@ import { FiMenu, FiMoon, FiSun, FiMail, FiCloud, FiFeather, FiBookOpen } from 'r
 import { Logo } from './Logo'
 import Link from 'next/link'
 
-const icons = {
-  'about': <FiFeather />,
-  'approach': <FiCloud />,
-  'service': <FiBookOpen />
-}
+const icons = [<FiFeather key={0} />, <FiCloud key={1} />];
+
+const navbarLocations = ['about', 'service', 'approach'];
+const navbarLabels = ['Who We Are', 'What We Do'];
 
 function ToggleTheme() {
   const { toggleColorMode } = useColorMode()
@@ -59,19 +58,19 @@ export const Navbar = () => {
         as="nav"
         bg="bg-surface"
         py={{
-          base: '4',
-          lg: '5',
+          base: '3',
+          lg: '4',
         }}
       >
-        <Container>
-          <HStack spacing="10" justify="space-between">
+        <Container maxW='8xl'>
+          <HStack spacing="4" justify="space-evenly">
             <Logo />
             {isDesktop ? (
-              <HStack spacing="10">
+              <HStack spacing="20">
                 <ButtonGroup variant="link" spacing="8">
-                  {['About', 'Service', 'Approach'].map((item, idx) => (
+                  {navbarLabels.map((item, idx) => (
                     <Link 
-                      href={`/#${item.toLowerCase()}`}
+                      href={`/#${navbarLocations[idx]}`}
                       passHref
                       key={idx}
                     >
@@ -110,18 +109,18 @@ export const Navbar = () => {
                     </DrawerHeader>
                     <DrawerBody >
                       <Stack spacing="4" align='flex-start'>
-                          {['About', 'Service', 'Approach'].map((item, idx) => (
+                          {navbarLabels.map((item, idx) => (
                             <Link 
-                              href={`/#${item.toLowerCase()}`}
+                              href={`/#${navbarLocations[idx]}`}
                               passHref
                               key={idx}
                             >
                               <Button
                                 onClick={() => {
-                                  setTab(item.toLowerCase())
+                                  setTab(navbarLocations[idx])
                                   onClose()
                                 }}
-                                leftIcon={icons[item.toLowerCase()]}
+                                leftIcon={icons[idx]}
                                 variant="ghost"
                               >
                                 {item}

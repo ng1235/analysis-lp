@@ -9,6 +9,8 @@ import { Services } from '../components/Services'
 import { About } from '../components/About'
 import { Pricing } from '../components/Pricing'
 import { Overview } from '../components/Overview'
+import { Testimonials } from '../components/Testimonials';
+import { CallToAction } from '../components/CallToAction';
 
 export default function Index() {
   return (
@@ -21,11 +23,14 @@ export default function Index() {
       <Box id="service">
         <Services />
       </Box>
-      <Box id="approach">
-        <Overview />
+      <Box id="testimonials">
+        <Testimonials />
       </Box>
-      <Box id="pricing">
-        <Pricing />
+      {/* <Box id="approach">
+        <Overview />
+      </Box> */}
+      <Box id="learn-more">
+        <CallToAction />
       </Box>
       <Footer />
     </Box>

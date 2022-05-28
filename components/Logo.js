@@ -9,7 +9,7 @@ export function Logo () {
       <Image 
         htmlWidth='50px' 
         htmlHeight='25px' 
-        src={mode("/logo-dark.svg", "./logo-light.svg")}
+        src={mode("/logo-dark.svg", "/logo-light.svg")}
         cursor='pointer' 
       />
     </Link>

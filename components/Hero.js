@@ -1,93 +1,90 @@
 import {
+  Badge,
   Box,
   Button,
-  Flex,
   Heading,
+  HStack,
   Img,
+  Stack,
   Text,
   useColorModeValue as mode,
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { FiMail } from 'react-icons/fi'
+import { HiArrowRight } from 'react-icons/hi'
 
-export function Hero() {
+export const Hero = () => {
   return (
-    <Box as="section" bg={mode('white', 'gray.800')} pt={{base: "16", md: "24"}} pb="12" overflow="hidden">
-      <Box
-        maxW={{
-          base: 'xl',
-          md: '7xl',
-        }}
-        mx="auto"
-        px={{
-          base: '6',
-          md: '8',
-        }}
-      >
-        <Flex
-          direction={{
-            base: 'column',
-            lg: 'row',
+    <Box
+      as="section"
+      bg={mode('white', 'gray.800')}
+      pos="relative"
+      px={{
+        base: '6',
+        lg: '12',
+      }}
+    >
+      <Box maxW="7xl" mx="auto">
+        <Box
+          maxW={{
+            lg: 'md',
+            xl: 'xl',
           }}
-          maxW='2xl'
-          mx='auto'
-          justifyContent='center'
-          mb="24"
+          pt={{
+            base: '20',
+          }}
+          pb={{
+            base: '16',
+            lg: '20',
+          }}
         >
-          <Flex
-            direction='column'
-            alignItems='center'
-          >
-            <Heading 
-              fontWeight="bold" 
-              as="h1" mt="8" 
-              textAlign='center'
-              size='3xl'
-            >
-              On-demand, industry standard project economic analysis.
-            </Heading>
-            <Text 
-              color={mode('gray.600', 'gray.400')}
-              mt="5" 
-              fontSize="2xl" 
-              textAlign='center' 
-              p={{
-                md: '0',
-                lg: '5'
-                }}
-              >
-              NextGen delivers professional, timely & robust project economics to support early opportunity decision making.
-            </Text>
-            <a 
-              href="mailto: matthewtng.2@gmail.com" target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                mt="12"
-                minW="10rem"
-                bgColor={mode('blue.800', 'blue.200')}
-                _hover={{ bg: mode('blue.700', 'blue.300') }}
-                color={mode('white', 'gray.800')}
-                size="lg"
-                height="14"
-                px="8"
-                fontSize="md"
-                leftIcon={<FiMail size='20' />}
-                textAlign='center'
-              >
+          <Heading as="h1" size="3xl" lineHeight="1" fontWeight="bold" letterSpacing="tight">
+            Opportunity and commercial evaluation {' '}
+            <Box as="mark" color={mode('blue.500', 'blue.300')} bg="transparent">
+              on demand
+            </Box>
+          </Heading>
+          <Text mt={4} fontSize="xl" fontWeight="medium" color={mode('gray.600', 'gray.400')}>
+            Get timely, personalised opportunity analysis and economic tools whenever you require, to support your project's decision making 
+          </Text>
+            <a target="_blank" href="mailto:matthewtng.2@gmail.com"
+            rel="noopener noreferrer">
+              <Button mt="8" size="lg" colorScheme="blue" height="14" px="8" fontSize="md" rightIcon={<HiArrowRight />}>
                 Get in touch
               </Button>
             </a>
-
-          </Flex>
-          {/* <Img
-            pos="relative"
-            marginEnd="-16rem"
-            w="50rem"
-            src="https://res.cloudinary.com/chakra-ui-pro/image/upload/v1621082943/pro-website/screenshot-dark_w6jpks.png"
-            alt="Screenshot for Form builder"
-          /> */}
-        </Flex>
+        </Box>
+      </Box>
+      <Box
+        pos={{
+          lg: 'absolute',
+        }}
+        insetY={{
+          lg: '0',
+        }}
+        insetEnd={{
+          lg: '0',
+        }}
+        w={{
+          base: 'full',
+          lg: '50%',
+        }}
+        height={{
+          base: '96',
+          lg: 'full',
+        }}
+        // sx={{
+        //   clipPath: {
+        //     lg: 'polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        //   },
+        // }}
+      >
+        <Img
+          h="100%"
+          w="100%"
+          objectFit="cover"
+          src={mode('./hero-light.svg', './hero-dark.svg')}
+          alt="Value Proposition Graphic"
+        />
       </Box>
     </Box>
   )

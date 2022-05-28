@@ -1,27 +1,27 @@
 export const questions = [
   {
     title: 'What does your service involve?',
-    answer: "An assessment of your opportunity's life-cycle project economics. We deliver this through an Excel-based discounted cash flow valuation model. Supporting presentation material can also be prepared if desired."
+    answer: "An assessment of your opportunity's life-cycle project economics. We deliver this through an Excel-based discounted cash flow valuation model, with supporting presentation material ."
   },
   {
     title: 'How long will it take?',
-    answer: 'Typically 2-4 weeks. This can be accelerated if required and is subject to agreed project scope.'
+    answer: 'Typically 2-4 weeks. This can be accelerated if required and is subject to agreed project scope, which could include new model builds, alternate business model assessments, audits, or negotiation support.'
   },
   {
-    title: 'How much do you charge?',
+    title: 'What is the price of your services?',
     answer: 'Pricing is on a project-specific basis and is dependent on its scope.'
   },
   {
     title: 'Who is a typical customer?',
-    answer: 'Development or opportunity managers leading projects in companies where an economic / investment assessment is required for guidance or project momentum. '
+    answer: 'Opportunity leads in companies where an economic assessment is required for guidance or project momentum. '
   },
   {
     title: 'What industries do you work with?',
-    answer: 'Our experience is in the natural resource industry (i.e. liquids, hydrogen / new energy) but can consider alternatives on request.'
+    answer: 'Our experience is in the natural resource industry (i.e. LNG, liquids, hydrogen / new energy) but can consider alternatives as required.'
   },
   {
     title: 'What makes your service different?',
-    answer: "We work on a project-specific basis, and do not require fixed or full-time employment contracts. We deliver to timelines on an 'as-required' basis, as long as it's agreed prior to commencement. We adhere to Excel modelling best practice, and our previous work has been reviewed by external Big 4 valuation teams and other experienced industry consultants ."
+    answer: "We save you budget by working on a project-specific basis, without full-time employment contracts. Notwithstanding that our previous work has been reviewed by external Big 4 valuation teams and other experienced industry consultants, the price of our service is likely to be lower than an equivalent Big 4 engagement."
   },
   // {
   //   title: 'Who provides the input assumptions for the engagement?',
@@ -45,7 +45,11 @@ export const questions = [
   // },
   {
     title: 'How do you determine scope?',
-    answer: "By working with you to understand what kind of problems you're looking to solve with our service. Invariably, it will differ from project to project (or even phase to phase). We only engage if we think that we can help you."
+    answer: "After an initial obligation-free consult, we then develop a high-level scope of work for your consideration."
+  },
+  {
+    title: 'Is the information shared with you confidential?',
+    answer: "Yes; we sign confidentiality agreements on request and maintain strict standards of client confidentiality."
   },
   {
     title: "Are you available for ongoing work or multiple phases?",

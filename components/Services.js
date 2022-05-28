@@ -1,98 +1,70 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Icon,
-  SimpleGrid,
-  Square,
-  Stack,
-  Text,
-  useBreakpointValue,
-  useColorModeValue as mode
-} from '@chakra-ui/react'
+import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import * as React from 'react'
-import { services } from './text-data/services-data'
-import { SectionHeader } from './SectionHeader'
+import { ServicesCard } from './ServicesCard'
 
 export const Services = () => {
-
-  return (    
-    <Box as="section" bg="bg-surface">
-      <Container
-        py={{
-          base: '12',
-          md: '18',
-        }}
-      >
-        <SectionHeader title="Our Service" />
-        <Stack
-          spacing={{
-            base: '12',
-            md: '16',
+  return (
+    <Box as="section" pb="20">
+      <Box bg="blue.600" pt="20" pb="20">
+        <Box
+          maxW={{
+            base: 'xl',
+            md: '7xl',
+          }}
+          mx="auto"
+          px={{
+            base: '6',
+            md: '8',
+          }}
+        >
+          <Box mb="16" color="white" maxW="xl">
+            <Heading size="2xl" letterSpacing="tight" fontWeight="bold" lineHeight="normal">
+              A proven track record
+            </Heading>
+            <Text fontSize="lg" mt="4" fontWeight="medium">
+              With experience in mega-projects, startups, mergers & acquisitions, joint-venture relationship management and alternate business development opportunities, we provide board & executive-ready information, analysis and tools at speed.
+            </Text>
+            <Text fontSize="lg" mt="4" fontWeight="medium">
+              Read more about some of our experience below:
+            </Text>
+          </Box>
+        </Box>
+      </Box>
+      <Box mt="-20">
+        <Box
+          maxW={{
+            base: 'xl',
+            md: '7xl',
+          }}
+          mx="auto"
+          px={{
+            base: '6',
+            md: '1',
           }}
         >
           <SimpleGrid
             columns={{
               base: 1,
               md: 2,
+              lg: 4,
             }}
-            columnGap={8}
-            rowGap={{
-              base: 10,
-              md: 24,
-            }}
-            my={10}
+            spacing="6"
           >
-            {services.map((service) => (
-              <Stack
-                key={service.name}
-                spacing={{
-                  base: '4',
-                  md: '5',
-                }}
-                align="center"
-                textAlign="center"
-              >
-                <Square
-                  size={{
-                    base: '10',
-                    md: '10',
-                  }}
-                  bg={mode('blue.800', 'blue.200')}
-                  color={mode('white', 'gray.700')}
-                  borderRadius="lg"
-                >
-                  <Icon
-                    as={service.icon}
-                    boxSize={{
-                      base: '5',
-                      md: '6',
-                    }}
-                  />
-                </Square>
-                <Stack
-                  spacing={{
-                    base: '1',
-                    md: '2',
-                  }}
-                >
-                  <Text
-                    fontSize={{
-                      base: '2xl',
-                      md: 'xl',
-                    }}
-                    fontWeight="medium"
-                    color={mode('gray.900', 'gray.400')}
-                  >
-                    {service.name}
-                  </Text>
-                  <Text color={mode('gray.900', 'gray.400')} p={5} fontSize={{base: 'lg', md: 'xl'}}>{service.description}</Text>
-                </Stack>
-              </Stack>
-            ))}
+            <ServicesCard title="Onshore Unconventionals" value="Kitimat" pageLink='klng'>
+              Model construction for a LNG megaproject
+            </ServicesCard>
+            <ServicesCard title="Hydrogen & New Energy" value="HyNet" pageLink='hynet'>
+              Valuation & recommendation for participation in a Korean hydrogen consortium
+            </ServicesCard>
+            <ServicesCard title="Infrastructure / Gas Purchase" value="Port Arthur" pageLink='palng'>
+              Economics for potential US Gulf of Mexico project buy-in
+            </ServicesCard>
+            <ServicesCard title="Alternate Business" value="Carbon" pageLink='carbon'>
+              Analysis for purchase of land for bio-sequestration
+            </ServicesCard>
           </SimpleGrid>
-        </Stack>
-      </Container>
+        </Box>
+      </Box>
     </Box>
   )
 }

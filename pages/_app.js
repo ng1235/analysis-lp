@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import theme from '@chakra-ui/pro-theme';
-import '@fontsource/inter/variable.css'
+import "@fontsource/inter";
 
 const config = {
   initialColorMode: 'dark',
@@ -11,6 +11,10 @@ const config = {
 function MyApp({ Component, pageProps }) {
   const myTheme = extendTheme({
     colors: {},
+    fonts: {
+      heading: `'Inter', 'sans-serif'`,
+      body: `'Inter', 'sans-serif'`
+    },
   },
   theme,
   config,

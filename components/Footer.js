@@ -11,6 +11,7 @@ export const Footer = () => (
       base: '10',
       md: '10',
     }}
+    maxW='100%'
   >
     <Divider />
     <Stack
@@ -20,10 +21,10 @@ export const Footer = () => (
       }}
       mt={6}
     >
-      <Stack justify="space-between" direction="row" align="center">
+      <Stack justify="center" spacing="14" direction="row" align="center">
         <Logo />
-        <Text fontSize="sm" color={mode("gray.900", "gray.400")} textAlign='center'>
-          &copy; {new Date().getFullYear()} Matthew N. ABN: 994 810 476 63
+        <Text fontSize="sm" color={mode("gray.700", "gray.400")} textAlign='center'>
+          &copy; {new Date().getFullYear()} NextGen Analysis | ABN: 994 810 476 63
         </Text>
         <ButtonGroup variant="ghost">
           <IconButton

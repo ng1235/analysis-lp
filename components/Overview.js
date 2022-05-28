@@ -20,10 +20,11 @@ export const Overview = () =>  (
       <SectionHeader title="Our Approach" />
       <Flex justifyContent='space-around' mt={10} >
         <Link href="/our-approach" passHref>
-          <Button fontSize={{base: 'md', md: 'lg'}}variant='outline'>Models Are Wrong</Button>
+          <Button fontWeight='medium' fontSize={{base: 'md', md: 'lg'}}variant='outline'>Models Are Wrong</Button>
         </Link>
         <Link href='/questions' passHref>
-          <Button fontSize={{base: 'md', md: 'lg'}}variant='outline'>Questions</Button>
+          <Button fontSize={{base: 'md', md: 'lg'}}
+          fontWeight='light' variant='outline'>Questions</Button>
         </Link>
       </Flex>
     </Box>
