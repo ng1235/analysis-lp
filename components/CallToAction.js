@@ -41,7 +41,7 @@ export const CallToAction = () => {
           </Box>
         </Heading>
         <Text fontSize="lg" maxW="lg" mx="auto">
-          Contact us for an obligation-free discussion on how we can help, based on your opportunity's specific requirements
+          Contact us for an obligation-free discussion on how we can help, based on your specific requirements
         </Text>
         <Stack
           direction={{

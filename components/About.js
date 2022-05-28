@@ -103,7 +103,7 @@ export function About() {
               Analysis on call
             </Heading>
             <Text color={mode('gray.600', 'gray.400')} mt="4" fontSize="lg" fontWeight="medium">
-              With professional training in valuation and analysis technique, we help you save budget by working independently on an 'on-demand' basis, with no fixed term or full-time arrangements required.
+              With professional training in valuation and analysis technique, we work independently with you on an on-demand basis, with no fixed term or full-time arrangements required.
             </Text>
             <Text color={mode('gray.600', 'gray.400')} mt="4" fontSize="lg" fontWeight="medium">
               Our key competencies include:
