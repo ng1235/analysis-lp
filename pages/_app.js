@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import theme from '@chakra-ui/pro-theme';
 import "@fontsource/inter";
+import Head from 'next/head';
 
 const config = {
   initialColorMode: 'dark',
@@ -21,6 +22,10 @@ function MyApp({ Component, pageProps }) {
   )
   return (
     <ChakraProvider theme={myTheme}>
+      <Head>
+        <title>NG Insights - Tailored Commercial Evaluation</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Component {...pageProps} />
     </ChakraProvider>
   )

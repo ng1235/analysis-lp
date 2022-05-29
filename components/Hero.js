@@ -45,7 +45,7 @@ export const Hero = () => {
             </Box>
           </Heading>
           <Text mt={4} fontSize="xl" fontWeight="medium" color={mode('gray.600', 'gray.400')}>
-            Get timely, personalised opportunity analysis and economic tools whenever you require, to support your project decision making capabilities 
+            Get personalised opportunity analysis, valuations and tools for your project decisions at speed - whenever required.
           </Text>
             <a target="_blank" href="mailto:matthewtng.2@gmail.com"
             rel="noopener noreferrer">
