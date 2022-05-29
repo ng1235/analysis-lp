@@ -69,7 +69,7 @@ export const Hero = () => {
           lg: '50%',
         }}
         height={{
-          base: '96',
+          // base: '96',
           lg: 'full',
         }}
         // sx={{

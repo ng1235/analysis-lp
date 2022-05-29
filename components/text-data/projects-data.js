@@ -13,9 +13,9 @@ export const projects = {
   },
   palng: {
     overview: 'US Gulf of Mexico LNG export project with grid gas purchase and fixed liquefaction tolling model.',
-    role: 'Own & operate valuation model and provide decision support for senior leadership updates',
-    deliverables: 'Executive presentation containing economic valuation, sensitivity analysis & key project investment metrics (e.g. Net Present Value, Internal Rate of Return)',
-    outcome: 'Used as support for decision to exit project.' 
+    role: 'Own & operate valuation model and provide decision support for senior leadership updates.',
+    deliverables: 'Executive presentation containing economic valuation, sensitivity analysis & key project investment metrics (e.g. Net Present Value, Internal Rate of Return).',
+    outcome: 'Used as decision support to exit project.' 
   },
   carbon: {
     overview: 'A native tree planting pilot project in regional Western Australia, targeting 1 million tonnes of carbon bio-sequestration over 25 years.',
