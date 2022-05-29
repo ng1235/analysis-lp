@@ -7,6 +7,7 @@ import {
   Img,
   Stack,
   Text,
+  Center,
   useColorModeValue as mode,
 } from '@chakra-ui/react'
 import * as React from 'react'
@@ -67,6 +68,7 @@ export const Hero = () => {
         w={{
           base: 'full',
           lg: '50%',
+          '2xl': '70%'
         }}
         height={{
           base: '64',
@@ -81,7 +83,6 @@ export const Hero = () => {
         <Img
           h="100%"
           w="100%"
-          objectFit="cover"
           src={mode('./hero-light.svg', './hero-dark.svg')}
           alt="Value Proposition Graphic"
         />
