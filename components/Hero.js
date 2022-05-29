@@ -38,13 +38,13 @@ export const Hero = () => {
           }}
         >
           <Heading as="h1" size="3xl" lineHeight="1" fontWeight="bold" letterSpacing="tight">
-            Opportunity and commercial evaluation {' '}
+            Tailored opportunity and commercial evaluation {' '}
             <Box as="mark" color={mode('blue.500', 'blue.300')} bg="transparent">
               on demand
             </Box>
           </Heading>
           <Text mt={4} fontSize="xl" fontWeight="medium" color={mode('gray.600', 'gray.400')}>
-            Get timely, personalised opportunity analysis and economic tools whenever you require, to support your project decision making capability 
+            Get timely, personalised opportunity analysis and economic tools whenever you require, to support your project decision making capabilities 
           </Text>
             <a target="_blank" href="mailto:matthewtng.2@gmail.com"
             rel="noopener noreferrer">

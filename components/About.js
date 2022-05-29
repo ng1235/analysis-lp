@@ -103,20 +103,20 @@ export function About() {
               Analysis on call
             </Heading>
             <Text color={mode('gray.600', 'gray.400')} mt="4" fontSize="lg" fontWeight="medium">
-              With professional training in valuation and analysis technique, we work independently with you on an on-demand basis, with no fixed term or full-time arrangements required.
+              With professional training in valuation and analysis technique, we work autonomously with you on an on-demand basis, with no fixed term or full-time arrangements required.
             </Text>
             <Text color={mode('gray.600', 'gray.400')} mt="4" fontSize="lg" fontWeight="medium">
               Our key competencies include:
             </Text>
             <UnorderedList color={mode('gray.600', 'gray.400')} mt="4" fontSize="lg" fontWeight="medium" spacing="3">
               <ListItem>
-                New valuation model builds to determine project viability
+                New valuation model builds with key investment metrics to determine project viability
               </ListItem>
               <ListItem>
-                Existing valuation model modifications & additions
+                Existing valuation model modifications & additions to reflect alternate business model considerations
               </ListItem>
               <ListItem>
-                Alternate business model or scenario analysis
+                Scenario (i.e. price & cost) analysis & optimization 
               </ListItem>
               <ListItem>
                 Commercial negotiation support / participation

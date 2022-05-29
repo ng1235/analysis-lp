@@ -1,19 +1,15 @@
 export const questions = [
   {
-    title: 'What does your service involve?',
-    answer: "An assessment of your opportunity's life-cycle project economics. We deliver this through an Excel-based discounted cash flow valuation model, with supporting presentation material ."
-  },
-  {
-    title: 'How long will it take?',
-    answer: 'Typically 2-4 weeks. This can be accelerated if required and is subject to agreed project scope, which could include new model builds, alternate business model assessments, audits, or negotiation support.'
+    title: 'How long are you available for?',
+    answer: 'The length of engagement is subject to your preference - contact for a discussion. Our previous work has taken around four weeks.'
   },
   {
     title: 'What is the price of your services?',
-    answer: 'Pricing is on a project-specific basis and is dependent on its scope.'
+    answer: 'Pricing is on a project-specific basis and is dependent on scope.'
   },
   {
     title: 'Who is a typical customer?',
-    answer: 'Opportunity leads in companies where an economic assessment is required for guidance or project momentum. '
+    answer: 'Opportunity leads in companies where an economic assessment is required for guidance or project momentum.'
   },
   {
     title: 'What industries do you work with?',
@@ -21,7 +17,11 @@ export const questions = [
   },
   {
     title: 'What makes your service different?',
-    answer: "We save you budget by working on a project-specific basis, without full-time employment contracts. Notwithstanding that our previous work has been reviewed by external Big 4 valuation teams and other experienced industry consultants, the price of our service is likely to be lower than an equivalent Big 4 engagement."
+    answer: "We work with you on a project-specific basis, without full-time employment contracts. That means that you can engage us as and when it suits your needs."
+  },
+  {
+    title: 'How is your service delivered?',
+    answer: "Our materials are delivered through Microsoft Excel and PowerPoint."
   },
   // {
   //   title: 'Who provides the input assumptions for the engagement?',
@@ -52,7 +52,7 @@ export const questions = [
     answer: "Yes; we sign confidentiality agreements on request and maintain strict standards of client confidentiality."
   },
   {
-    title: "Are you available for ongoing work or multiple phases?",
+    title: "Are you available for multiple phases of work?",
     answer: "Yes - there's most likely a lot that's left out of an initial analysis, because we only aim to assess and support the objectives that are relevant to you at a certain point in time. We're available on request to assess additional phases, other operating models, or if you require additional functionality in your valuation model."
   },
   // {

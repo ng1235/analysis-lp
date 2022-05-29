@@ -24,7 +24,7 @@ export const Footer = () => (
       <Stack justify="center" spacing="14" direction="row" align="center">
         <Logo />
         <Text fontSize="sm" color={mode("gray.700", "gray.400")} textAlign='center'>
-          &copy; {new Date().getFullYear()} NextGen Analysis | ABN: 994 810 476 63
+          &copy; {new Date().getFullYear()} ABN: 994 810 476 63
         </Text>
         <ButtonGroup variant="ghost">
           <IconButton
