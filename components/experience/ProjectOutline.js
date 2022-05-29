@@ -40,7 +40,13 @@ export const Project = ({ heading, image, overview, role, deliverables, outcome,
               md: '12',
             }}
           >
-            <Stack p={8} spacing="8" maxW="lg">
+            <Stack 
+              p={{
+                base: '0',
+                lg: '8'
+              }} 
+              spacing="8" maxW="lg"
+            >
               <Feature icon={<Box as={FaCommentDots} w="6" h="6" />} title="Overview">
                 { overview }
               </Feature>
@@ -54,7 +60,7 @@ export const Project = ({ heading, image, overview, role, deliverables, outcome,
                 { outcome }
               </Feature>
             </Stack>
-            <Center minH="26rem">
+            <Center>
               <Img
                 w="100%"
                 h="100%"

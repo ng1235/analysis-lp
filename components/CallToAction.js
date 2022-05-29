@@ -34,7 +34,7 @@ export const CallToAction = () => {
           <Box
             as="mark"
             bg="unset"
-            color={useColorModeValue('blue.600', 'blue.200')}
+            color={useColorModeValue('blue.600', 'blue.300')}
             whiteSpace="nowrap"
           >
             today

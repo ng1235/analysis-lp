@@ -19,7 +19,7 @@ export const ServicesCard = (props) => {
       >
         <Text
           as="dt"
-          color={useColorModeValue('blue.500', 'blue.300')}
+          color={useColorModeValue('blue.500', 'blue.200')}
           fontSize="sm"
           fontWeight="bold"
           textTransform="uppercase"

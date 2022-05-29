@@ -18,7 +18,7 @@ import { HiPlay } from 'react-icons/hi'
 
 export function About() {
   return (
-    <Box as="section" bg={mode('white', 'gray.800')} pt="20" pb="24">
+    <Box as="section" bg={mode('white', 'gray.800')} pt={{base: '5', lg: '20'}} pb="24">
       <Box
         maxW={{
           base: 'xl',
@@ -32,7 +32,7 @@ export function About() {
       >
         <Stack
           direction={{
-            base: 'column',
+            base: 'column-reverse',
             lg: 'row',
           }}
           spacing={{
@@ -87,7 +87,7 @@ export function About() {
               size="xs"
               textTransform="uppercase"
               fontWeight="semibold"
-              color={mode('blue.600', 'blue.300')}
+              color={mode('blue.600', 'blue.200')}
               letterSpacing="wide"
             >
               About Us
