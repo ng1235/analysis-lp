@@ -39,7 +39,7 @@ export const Hero = () => {
         >
           <Heading as="h1" size="3xl" lineHeight="1" fontWeight="bold" letterSpacing="tight">
             Tailored opportunity and commercial evaluation {' '}
-            <Box as="mark" color={mode('blue.500', 'blue.300')} bg="transparent">
+            <Box as="mark" color={mode('blue.600', 'blue.300')} bg="transparent">
               on demand
             </Box>
           </Heading>

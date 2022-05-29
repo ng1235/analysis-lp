@@ -24,7 +24,7 @@ export const Footer = () => (
       <Stack justify="center" spacing="14" direction="row" align="center">
         <Logo />
         <Text fontSize="sm" color={mode("gray.700", "gray.400")} textAlign='center'>
-          &copy; {new Date().getFullYear()}
+          &copy; {new Date().getFullYear()} Ng Insights
         </Text>
         <ButtonGroup variant="ghost">
           <IconButton
