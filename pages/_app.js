@@ -23,21 +23,22 @@ function MyApp({ Component, pageProps }) {
   )
   return (
     <>
-      <Script id="get-gtag" strategy="lazyOnload" async src= 'https://www.googletagmanager.com/gtag/js?id=G-Y5N1099QLF' />
 
-      <Script id="activate-gtag" strategy="lazyOnLoad">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-Y5N1099QLF');
-        `}
-      </Script>
       <ChakraProvider theme={myTheme}>
         <Head>
           <title>NG Insights - Tailored Commercial Evaluation</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <Script id="get-gtag" strategy="lazyOnload" async src= 'https://www.googletagmanager.com/gtag/js?id=G-Y5N1099QLF' />
+
+          <Script id="activate-gtag" strategy="lazyOnLoad">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-Y5N1099QLF');
+            `}
+          </Script>
         </Head>
         <Component {...pageProps} />
       </ChakraProvider>
