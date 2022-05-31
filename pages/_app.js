@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   )
   return (
     <>
-      <Script id="get-gtag" strategy="lazyOnload" src= 'https://www.googletagmanager.com/gtag/js?id=G-Y5N1099QLF' />
+      <Script id="get-gtag" strategy="lazyOnload" async src= 'https://www.googletagmanager.com/gtag/js?id=G-Y5N1099QLF' />
 
       <Script id="activate-gtag" strategy="lazyOnLoad">
         {`
