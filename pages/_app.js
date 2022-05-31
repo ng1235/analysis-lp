@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   )
   return (
     <>
-      <Script id="get-gtag" strategy="lazyOnload" src= {`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      <Script id="get-gtag" strategy="lazyOnload" src= 'https://www.googletagmanager.com/gtag/js?id=G-Y5N1099QLF' />
 
       <Script id="activate-gtag" strategy="lazyOnLoad">
         {`
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+          gtag('config', 'G-Y5N1099QLF');
         `}
       </Script>
       <ChakraProvider theme={myTheme}>
