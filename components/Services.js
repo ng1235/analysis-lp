@@ -22,7 +22,7 @@ export const Services = () => {
               Examples of our work
             </Heading>
             <Text fontSize="lg" mt="4" fontWeight="medium">
-              With experience in mega-projects, startups, mergers & acquisitions, joint-venture relationship management and alternate business development opportunities, we have the unique service differential to give you insights, comparisons and suggested actions to improve economic robustness, maximise upside potential and minimize downside risk.
+              We have the unique service differential to give you insights, comparisons and suggested actions to improve economic robustness, maximise upside potential and minimize downside risk.
             </Text>
             <Text fontSize="lg" mt="4" fontWeight="medium">
               Read more about our experience below:

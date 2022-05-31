@@ -75,6 +75,10 @@ export const Project = ({ heading, image, overview, role, deliverables, outcome,
               href={`https://${url}`}
               target="_blank"
               rightIcon={<FaChevronCircleRight />}
+              mt={{
+                base: '8',
+                md: '0'
+              }}
             >
               Read More
             </Button>
