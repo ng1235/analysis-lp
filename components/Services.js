@@ -19,10 +19,10 @@ export const Services = () => {
         >
           <Box mb="16" color="white" maxW="xl">
             <Heading size="2xl" letterSpacing="tight" fontWeight="bold" lineHeight="normal">
-              Examples of our work
+              Proof of Work
             </Heading>
             <Text fontSize="lg" mt="4" fontWeight="medium">
-              We have the unique service differential to give you insights, comparisons and suggested actions to improve economic robustness, maximise upside potential and minimize downside risk.
+              We provide tools, insights and suggested actions to improve economic robustness, maximise upside potential and minimize downside risk.
             </Text>
             <Text fontSize="lg" mt="4" fontWeight="medium">
               Read more about our experience below:

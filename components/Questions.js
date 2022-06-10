@@ -9,7 +9,13 @@ import { Question } from './Question'
 export const AllQuestions = () => (
   <Box maxWidth='2xl' mx='auto' my="16" px="10">
     <PageHeader title="Questions" />
-    <Accordion mx='6' allowMultiple>
+    <Accordion 
+      mx={{
+        base: '0',
+        lg: '6'
+      }} 
+      allowMultiple
+    >
       {questions.map((question, idx) => (
         <Question 
           key={idx} 
