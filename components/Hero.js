@@ -49,7 +49,7 @@ export const Hero = () => {
           </Text>
             <a target="_blank" href="mailto:matthewtng.2@gmail.com"
             rel="noopener noreferrer">
-              <Button mt="8" size="lg" colorScheme="blue" height="14" px="8" fontSize="md" rightIcon={<HiArrowRight />}>
+              <Button mt="8" size="lg" isFullWidth={{base: 'true', md: 'false'}} colorScheme="blue" height="14" px="8" fontSize="md" rightIcon={<HiArrowRight />}>
                 Get in touch
               </Button>
             </a>
