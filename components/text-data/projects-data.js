@@ -3,7 +3,7 @@ export const projects = {
     overview: 'Kitimat LNG was a 12 million tonne (per annum) megaproject based in British Columbia, Canada, comprised of upstream gas resources in the Liard basin, a greenfield Pacific Trails Pipeline and two LNG trains.',
     role: 'Led valuation analysis for the consolidated Kitimat project, and joint venture partner analyst discussions in-country.',
     deliverables: 'Built discounted cash flow valuation for Kitimat; inclusive of the upstream, midstream and downstream portions of the project.',
-    outcome: 'Model used as the foundation for asset impairments & decision analysis for future participation in the project. Reviewed and by Big 4 valuations team.'
+    outcome: 'Model used as the foundation for asset impairments & decision analysis for future participation in the project. Reviewed by Big 4 valuations team.'
   },
   hynet: {
     overview: "A South Korean government backed special-purpose company with aims to construct 100 hydrogen refuelling stations by the early-mid 2020's",

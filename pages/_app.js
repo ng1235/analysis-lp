@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 
       <ChakraProvider theme={myTheme}>
         <Head>
-          <title>NG Insights - Tailored Commercial Evaluation</title>
+          <title>Ng Insights - Tailored Commercial Evaluation</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <script async src= 'https://www.googletagmanager.com/gtag/js?id=G-Y5N1099QLF' />
 
